@@ -323,9 +323,7 @@ function getSumOfDigits(num) {
  *   15  => false
  */
 function isPowerOfTwo(num) {
-  const log = Math.log2(num);
-
-  return log === Math.round(log);
+  return Number.isInteger(Math.log2(num));
 }
 
 /**
